@@ -31,22 +31,24 @@ left: 50vw;
 </style>   
 
 <title>PROTOCOLO DE REDES</title>
-    <h2><center>Protocolo de rede</center></h2>
-    <h3>INTRODUÇÃO</h3>
+    <h2><center>PROTOCOLO DE REDES</center></h2>
+    <h3><center>INTRODUÇÃO</center></h3>
+    <center><img src="Protocolo.png" alt="Protocolo" width="500" height="333"></center>
+
     <p class="P">Os protocolos é uma tecnologia que permite a comunicação entre 
 os computadores, ou seja, se tiver duas pessoas que falam em idiomas diferentes, não há 
 possibilidade de ter uma comunicação nesse ambiente.Os protocolos de internet funciona dessa forma, como uma espécie de “língua universal” entre computadores. Independente do fabricante e do sistema operacional instalado, essa linguagem é interpretada por todas as máquinas igualmente.
 Assim, não é necessário usar qualquer tipo de software extra para que um computador possa entender os protocolos de rede. É desse jeito que ele se comunica com outro computador ligado à rede mundial de computadores sem qualquer problema. </P> 
-    <h3>TIPOS DE PROTOCOLOS</h3>
-    <p class="box">ARP</p>
+    <h3><center>TIPOS DE PROTOCOLOS</center></h3>
+    <b><p class="box">ARP</p></b>
     <p class="P">O protocolo ARP (Address Resolution Protocol ou, em português, Protocolo de Resolução de Endereço) tem um papel fundamental entre os protocolos da suíte TCP/IP, porque permite conhecer o endereço físico de uma placa de rede que corresponde a um endereço IP. Veja mais sobre esse protocolo a seguir. Cada máquina ligada à rede possui um número de identificação de 48 bits. Esse número é único e fixado a partir da fabricação da placa na fábrica. Contudo, a comunicação na Internet não é feita diretamente a partir desse número (porque seria necessário alterar o endereçamento dos computadores cada vez que se alterasse uma placa de rede), mas a partir de um endereço lógico, o endereço IP. Assim, para fazer a correspondência entre endereços físicos e endereços lógicos, o protocolo ARP interroga as máquinas da rede para conhecer o seu endereço físico e depois cria uma tabela de correspondência entre os endereços lógicos e os endereços físicos em uma memória secreta. Quando uma máquina tem que se comunicar com outra, ela consulta a tabela.</p>
-    <p class="box">HTTP</p>
+    <b><p class="box">HTTP</p></b>
     <p class="P">O Protocolo de Transferência de Hipertexto (protocolo HTTP) é usado principalmente em redes baseadas em IP para a transmissão de páginas web de um servidor para o navegador. Ele funciona sem criptografia e não se limita a aplicativos. o que é protocolo HTTP? A abreviatura de “Hypertext Transfer Protocol” descreve um protocolo sem estado com o qual os dados podem ser transmitidos em uma rede IP. A aplicação mais importante é a transferência de páginas da Internet e dados entre um servidor web e um navegador. No entanto, ele não está restrito a sites, sendo usado para aplicativos.
 
         Por exemplo, o protocolo de transferência de arquivos WebDAV é baseado no protocolo HTTP. O WebDAV é usado para transferir dados de diretório e arquivos em uma rede IP. Os serviços da Web REST também são baseados no Protocolo de Transferência de Hipertexto. No modelo de camada, o protocolo HTTP é atribuído à camada de aplicação 7.
         
         O HTTP funciona sem criptografia e envia todas as informações em texto não criptografado. Túneis VPN criptografados (Rede Privada Virtual) ou a variante criptografada do protocolo HTTPS podem ser usados ​​para evitar a escuta de conexões. No caso de um site utilizar protocolo HTTPS, o Google Chrome identifica com um cadeado, e assim o visitante de um site pode identificar que os dados são criptografados e que o site é seguro.</p>
-    <p class="box">FTP</p>
+    <b><p class="box">FTP</p></b>
     <p class="P">FTP é a sigla para File Transfer Protocol, que significa Protocolo de Transferência de Arquivos. Ele surgiu antes mesmo do padrão TCP/IP, que é a base das conexões de internet. E é o modo mais simples de transferir dados entre duas máquinas pela rede.  
 
         O protocolo FTP funciona com dois tipos de conexão:
@@ -58,36 +60,37 @@ Assim, não é necessário usar qualquer tipo de software extra para que um comp
         Na transferência de arquivos, a conexão é ativada pela porta 20 do servidor a alguma porta do cliente previamente estabelecida ou comunicada pelo próprio servidor.
         
         O FTP é muito útil caso o usuário perca o acesso ao painel de controle do seu site WordPress, por exemplo. Nesta situação, pode usar uma ferramenta de FTP para ajustar códigos de página, colocar ou apagar arquivos ou resolver qualquer outro problema no seu site.</p>
-    <p class="box">TCP</p>
+    <b><p class="box">TCP</p></b>
     <p class="P">O TCP é um protocolo orientado à conexão e tem como propósito garantir que o destinatário receba todos os pacotes, seja um PC ou servidor. A garantia oferecida pelo TCP se baseia nas suas verificações. Além de enviar os pacotes, o protocolo verifica se ele chegou ao destinatário e na sequência exata.  o TCP se destaca pelo seu controle de fluxo e condições de transmissão, controle da conexão entre dois pontos e verificação de erros.</p>
-    <p class="box">ICMP</p>
+    <b><p class="box">ICMP</p></b>
     <p class="P">O ICMP é um protocolo para determinar a disponibilidade da rede e gerenciar o tráfego e o controle de erros na camada de rede. Este protocolo diagnostica problemas de conectividade de rede ou transferência de dados entre dispositivos. Ele auxilia enviando, recebendo e processando mensagens ICMP para relatar problemas de conectividade aos dispositivos de rede de origem. </p>
     <p class="P">Portanto, o principal objetivo do protocolo ICMP é relatar erros na camada de rede. No entanto, atores mal-intencionados podem manipular seus recursos para lançar ataques como ataques distribuídos de negação de serviço (DDoS) e Ping of Death. Aqui, você aprenderá sobre o protocolo ICMP, seus casos de uso e parâmetros importantes para entender as mensagens ICMP.</p>
-    <p class="box">IP</p>
+    <b>><p class="box">IP</p></b>
     <p class="P">O IP (Internet Protocol) é o principal protocolo de comunicação da Internet. Ele é o responsável por endereçar e encaminhar os pacotes que trafegam pela rede mundial de computadores. Pacotes são os blocos de informações enviados na Internet e podem ser considerados como as cartas enviadas pelo serviço de correios.</p>
     <p class="P">Os pacotes da Internet são divididos em duas partes: o cabeçalho, que, como um envelope, possui as informações de endereçamento da correspondência, e dados, que é a mensagem a ser transmitida propriamente dita. Na imagem abaixo, observa-se um esquema do cabeçalho do protocolo IP. Cada pacote possui um endereço de destino e um endereço de origem e, a cada roteador no caminho, o endereço de destino é verificado e o pacote encaminhado para o próximo salto no caminho.</p>
-    <p class="box">SMTP</p>
+    <b><p class="box">SMTP</p></b>
     <p class="P">O protocolo SMTP é o responsável por garantir que os e-mails que você envia diariamente cheguem aos destinatários. O objetivo principal é configurar regras de comunicação entre servidores, já que eles têm uma forma específica de se identificarem e anunciarem que tipo de comunicação estão tentando realizar. Este protocolo de comunicação padrão da internet possui dois componentes, o agente de usuário (o cliente SMTP) e o agente de transferência de correio (o servidor SMTP). A logística é similar a uma agência de Correios. Enquanto o agente do usuário prepara a mensagem, cria o envelope e coloca a mensagem ali, o agente de transferência de correio (MTA) transfere a correspondência, mas pela internet.</p>
     <p class="P">O Simple Mail Transfer Protocol (SMTP), ou seja, Protocolo de Transferência de Correio Simples é a tecnologia que permite que e-mails sejam enviados de um servidor para outro até serem entregues na caixa de correio.
 
         Em outras palavras, o SMTP é um protocolo de internet que conecta máquinas e ajuda a transportar o e-mail, como um carteiro virtual. Ele faz parte da camada de aplicação do protocolo TCP/IP. </p> 
 
-    <p class="box">Telnet</p>
+    <b><p class="box">TELNET</p></b>
     <p class="P">O Telnet é um protocolo de rede normalmente usado para agilizar o conserto de falhas em computadores. Ele possibilita uma conexão remota entre duas máquinas, facilitando não só a correção de erros, mas também o acesso a programas e dados. O Telnet é usado para executar linhas de comando em um computador remoto. Ele trabalha verificando a disponibilidade de uma porta e, caso esteja aberta, solicita uma conexão. Como se trata de um protocolo, existe uma série de procedimentos e regras para padronizar a comunicação.
 
         Antes de iniciar qualquer conexão, o usuário deve instalar um software baseado em Telnet nos dois computadores. Quando for preciso criar um acesso, o programa vai solicitar um nome de usuário e senha para evitar invasões. No entanto, esses dados só serão validados caso o usuário tenha configurado anteriormente uma conta na máquina remota.</p>
         <p class="P">Apesar da facilidade, o Telnet não é um protocolo seguro, pois carece de um sistema de criptografia. Considerando que os comandos enviados são textos simples, pessoas não autorizados que estiverem monitorando a conexão podem visualizar o nome do usuário, senha e outras informações privadas digitadas na sessão.
 
             Por questões de segurança, diversas empresas utilizam protocolos mais robustos, como o SSH, que criptografa todo o tráfego que passa pelo canal de comunicação para manter a integridade dos dados.</p>
-    <p class="box">UDP</p>
+    <b><p class="box">UDP</p></b>
     <p class="P">O protocolo UDP (sigla para User Datagram Protocol) tem, como característica essencial, um atributo que pode parecer esquisito para os iniciantes no tema - a falta de confiabilidade.
-
         Isso significa que, através da utilização desse protocolo, pode-se enviar datagramas de uma máquina à outra, mas sem garantia de que os dados enviados chegarão intactos e na ordem correta.
-        
         Além do mais, o UDP é um protocolo que não é voltado à conexão. Isso significa que o "aperto de mão", ou, tecnicamente, handshake, não é necessário para que se estabeleça uma comunicação.</p>
         <p class="P"></p>
-    <p class="box">NNTP</p>
-    <p class="P"></p>
+    <b><p class="box">NNTP</p></b>
+    <p class="P">NNTP é o protocolo usado para se conectar a Usenet servidores e transfira artigos de grupos de notícias entre sistemas pela Internet. É semelhante ao SMTP protocolo usado para enviar mensagens de email, mas foi projetado especificamente para artigos de grupos de notícias.
+O NNTP permite a comunicação entre servidor / servidor e cliente / servidor. NNTP servidores, por exemplo, podem se comunicar e replicar grupos de notícias entre si. É assim que a rede Usenet é criada e mantida. No modelo cliente-servidor, O NNTP permite uma cliente sistema para conectar-se a um servidor Usenet e fornece comandos para navegar e exibir artigos no servidor.</p>
+
+
 
 
 
