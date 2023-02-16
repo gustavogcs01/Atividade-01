@@ -112,20 +112,46 @@ ou recebe a mesma.</p>
 <li>Se um desses hosts falhar, poderá impactar toda a rede</li>
 <li>Difícil isolar os Hosts</li>
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 <h1><center>TEMA:IPV4, MÁSCARA DE REDE E GATEWAY </center></h1>
 
 <center><img src="REDES.webp" alt="REDES" width="700" height="333"></center>
+<p class="P">Para eu obter a comunicação entre os hosts da minha rede, eu preciso da minha parte física (topologia, cabeamento) para que a rede tenha a possibilidade de ter uma comunicação entre os hosts, porém necessita ter a configuração lógica (IPV4, Máscara de rede, Gateway e DNS), sem esses fatores não é possível estabelecer uma comunicação entre os hosts da rede.</p>
+
 <p class="box"
+<h3><b>IPV4</b></h3>
+<p class="P">IPV4 significa Protocol version 4, ou versão 4 de protocolos. É a tecnologia que permite que nossos aparelhos conectem na Internet, seja qual for o tipo de gadget – pode ser PC, Mac, smartphones ou outros aparelhos. Cada um que estiver online terá um código único, como 99.48.227.227 por exemplo, para enviar e receber dados de outros que estiverem conectados.</p>
+<center><img src="ipv4.webp" alt="ipv4" width="500" height="200"></center>
+<p class="P">Estes endereços IP, o IPV4, é formado por 4 blocos de 8 bits (8*4=32), estes são exibidos por números de 0 a 255, por exemplo "200.145.36.25" ou "65.45.32.41".</p>
+<p class="P">Cada computador ou dispositivo conectado à Internet deve ter um único Endereço IP para se comunicar com outros sistemas na Internet. Como o número de sistemas conectados à Internet está se aproximando rapidamente do número de endereços IP disponíveis, prevê-se que os endereços IPv4 se esgotem em breve. Quando você considera que existem mais de um bilhão de pessoas do 6 no mundo e muitas pessoas têm mais de um sistema conectado à Internet (por exemplo, em casa, escola, trabalho etc.), não é de surpreender que aproximadamente o bilhão de endereços do 4.3 seja insuficiente.
+Para resolver esse problema, um novo sistema IP de bits 128, chamado IPv6, foi desenvolvido e está em processo de substituição do sistema IPv4 atual. Durante esse processo de transição do IPv4 para o IPv6, os sistemas conectados à Internet podem receber um endereço IPv4 e IPv6.</p>
 
+<p class="box"
+<h3><b>MÁSCARA DE REDES</b></h3>
+<p class="P">A máscara de rede tem 32 bits, assim como o endereço IP, tendo como finalidade mascarar uma parte do endereço IP. Sendo assim, todo endereço IP tem uma máscara correspondente, servindo para identificar qual parte do endereço é da rede e qual é a do host.
+Existe ainda uma classe de endereçamento para cada máscara de rede. Veja a seguir:
 
+<li>-Classe de endereçamento A: 255.0.0.0</li>
+<li>-Classe de endereçamento B: 255.255.0.0;</li>
+<li>-Classe de endereçamento C: 255.255.255.0.</li>
+<center><img src="Mrede.jpg" alt="Mrede" width="500" height="200"></center>
+</p>
 
+<p class="box"
+<h3><b>GATEWAY</b></h3>
 
-
-
-
-
+<p class="P">Gateway funciona como uma espécie de portal, ou seja, age como uma espécie de “fio condutor” da conexão do dispositivo com a internet. Dessa forma, o gateway age com o objetivo de obter as informações requeridas previamente pelo usuário, através do acesso nas páginas de internet ou aplicativos instalados no celular.</p>
+<p class="P">No início da oferta de conexão à internet, era comum que esse gateway estivesse conectado a uma só fonte, tornando inviável o acesso do usuário continuamente.</p>
+<p class="P">Com o avanço tecnológico impulsionado pela rede sem fio, atualmente podemos encontrá-lo atrelado a um roteador que gera sinal de internet por todo o espaço ao qual está instalado.</p>
+<p class="P"> O gateway é o portal entre a internet e o usuário que deseja se conectar a ela, essa comunicação só é realizada através do endereço de IP de cada um dos envolvidos nesse processo.
+Sendo assim, a conexão só consegue ser estabelecida caso exista um mecanismo que possa prover o encontro desses dois IPs, por não existir uma comunicação direta de IP para outro IP — justamente pelo fato de serem números distintos — a intermediação fica a par do gateway.
+Essa ferramenta serve, portanto, para organizar as informações trocadas entre o dispositivo e o acesso à internet, sempre buscando a melhor qualidade dessa conexão.</p>
+<center><img src="gateway.webp" alt="gateway" width="500" height="200"></center>
+<p class="P">Vimos até aqui que o gateway é um item fundamental para que a conexão com a internet possa ocorrer sem transtornos. Por ser um mecanismo presente nas mais diversas redes, também precisa garantir a segurança dos dados trocados.</p>
+<p class="P">Como a rede externa pode ter acesso aos aparelhos conectados na rede, o gateway precisa contar com alguns dispositivos de segurança, e um deles é representado pelo famoso firewall. Em tradução literal, firewall significa “parede de fogo”, o que podemos entender que esse dispositivo age como uma grande barreira para defender as informações que estão contidas nessa conexão.
+Dessa maneira, o firewall analisa o tráfego de rede e estabelece operações que serão executadas dentro dessa troca de dados, bloqueando as informações indesejadas e liberando somente os acessos que não oferecem nenhum tipo de risco a esta conexão.</p>
 
 
 
