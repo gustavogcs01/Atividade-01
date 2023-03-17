@@ -1,0 +1,46 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+  
+<header>
+  <h1>Segurança da Informação</h1>
+</header>
+<div className="Segurança da Informação"></div>
+<p>Segurança da Informação é um conjunto de ações, ferramentas e normas que visam defender dados e informações e mantê-los sempre intactos, confidenciais, disponíveis, autênticos e dentro das leis vigentes. A Segurança da Informação é padronizada pelas normas da família ISOIEC 27000, que tratam exclusivamente deste tema (Sistema de Gestão e Segurança da Informação).</p>
+<h1></h1>
+<p>A Segurança Cibernética abrange a proteção de dados e informações que transitam por um local informatizado. Tanto a Segurança da Informação quanto a Ciber segurança transitam não apenas no ambiente organizacional e corporativo, mas também em nossa rotina. Cabe a nós, também, aprender a nos prevenir e sanar os riscos.</p>
+<h1>Conceitos-base</h1>
+<p>Para prosseguirmos, é de extrema importância entendermos alguns conceitos:</p>
+<h1>Dado</h1>
+<p>Dados são elementos brutos, que ainda não foram tratados. São a matéria prima de uma informação. Sem eles, uma informação não pode ser desenvolvida, já que não consegue transmitir uma mensagem clara e concisa.</p>
+<p>E: “José Moura”, “080.008.158-78”, “Rua do Sol,123” (Não há convexo)</p>
+<h1>Informação</h1>
+<p>eamplia o significado para que a mensagem ou fato consiga ser compreendido.</p>
+<p>exu: José Moura possui o CPF de n° 080.008.158-78 e mora no endereço Rua do Sol,123.</p>
+<h1>Conhecimento</h1>
+<p>Conhecimento é um saber alcançado pela reflexão através da retenção de informações, críticas e profundas observações perante um tema. É a concepção de conceitos, princípios, hipóteses e até mesmo procedimentos e instruções.</p>
+<h1>Ativo</h1>
+<
+
+
+
+
+
+Ativos são todos os tipos de bens, produtos e valores que uma organização possui e que
+constituem seu patrimônio atual. Todo ativo possui um valor, ou seja, reflete na organização
+como um todo caso este seja afetado de alguma forma.
+Os ativos podem ser classificados como:
+Tangíveis: Todos os bens concretos, que podem ser tocados. Exemplos: Imóveis, móveis,
+computadores, monitores, modems, maquinários de indústrias, entre outros.
+Intangíveis: Todos os bens que não podem ser tocados. Exemplos: Dados e informações
+digitalizadas, estratégias, princípios da organização, entre outros.
+
+
+    </div>
+  );
+}
+
+export default App;
